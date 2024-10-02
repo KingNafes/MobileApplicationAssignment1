@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Header Title -->
+    <TextView
+        android:id="@+id/headerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMI Calculator"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Mortgage Amount Input -->
+    <EditText
+        android:id="@+id/mortgageAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mortgage Amount"
+        android:layout_below="@id/headerTitle"
+        android:layout_marginTop="16dp" />
+
+    <!-- Tenure Input -->
+    <EditText
+        android:id="@+id/tenure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tenure (months)"
+        android:layout_below="@id/mortgageAmount"
+        android:layout_marginTop="16dp" />
+
+    <!-- Interest Rate Input -->
+    <EditText
+        android:id="@+id/interestRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Annual Interest Rate"
+        android:layout_below="@id/tenure"
+        android:layout_marginTop="16dp" />
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/calculateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_below="@id/interestRate"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- EMI Result TextView -->
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMI will be displayed here"
+        android:layout_below="@id/calculateBtn"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
